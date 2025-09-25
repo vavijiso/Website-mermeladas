@@ -1,0 +1,382 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#page {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Cabecera (se mantiene igual) */
+.cabecera {
+    background: #ebc4fa url(../images/cabecera.jpg) no-repeat center top;
+    background-size: cover;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.cabecera-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 40px 20px;
+}
+
+/* NAVBAR (se mantiene igual) */
+.navbar {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px 0;
+    width: 100%;
+    border-bottom: 1px solid #f1b7ff;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #82528e;
+    font-size: 16px;
+    font-weight: normal;
+    transition: color 0.3s;
+    white-space: nowrap;
+    padding: 12px 20px;
+    display: block;
+}
+
+.navbar a:hover {
+    color: #6a4174;
+    font-weight: bold;
+}
+
+/* Contenido principal */
+.contenido-principal {
+    padding: 60px 20px;
+    background: #ffffff;
+    width: 100%;
+}
+
+.intro {
+    max-width: 900px;
+    margin: 0 auto 80px;
+    text-align: center;
+}
+
+/* SOLO CAMBIO AQUÍ: Título principal más grande */
+.intro h2 {
+    font-size: 3rem; /* Aumenté de 2.5rem a 3rem */
+    margin-bottom: 25px;
+    color: #82528e;
+}
+
+.intro p {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-saber-mas {
+    display: inline-block;
+    background: #82528e;
+    color: #eae8e8;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.btn-saber-mas:hover {
+    background: #6a4174;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* NUEVA SECCIÓN: POR QUÉ ELEGIRNOS */
+.por-que-elegirnos {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* SOLO CAMBIO AQUÍ: Tamaño igual al de recetas */
+.por-que-elegirnos h3 {
+    font-size: 2.2rem; /* Mismo tamaño que recetas-texto h3 */
+    color: #82528e;
+    margin-bottom: 15px;
+}
+
+.subtitulo {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 50px;
+    font-style: italic;
+}
+
+.razones {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.razon {
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    background: #d4b8db;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.razon:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(130, 82, 142, 0.15);
+    border-color: #c8a4d1;
+}
+
+.icono {
+    margin-bottom: 20px;
+}
+
+.icono i {
+    font-size: 3.5rem;
+    color: #82528e;
+    transition: all 0.3s ease;
+}
+
+.razon:hover .icono i {
+    color: #6a4174;
+    transform: scale(1.1);
+}
+
+.razon h3 {
+    color: #82528e;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.razon p {
+    color: #666;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+/* NUEVA SECCIÓN: RECETAS CON CUADERNO */
+.recetas-cuaderno {
+    background: linear-gradient(135deg, #f8f8f8 0%, #eae8e8 100%);
+    padding: 80px 20px;
+    width: 100%;
+}
+
+.recetas-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.cuaderno-imagen {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.cuaderno-imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.cuaderno-imagen img:hover {
+    transform: scale(1.02);
+}
+
+.recetas-texto {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+/* ESTE SE MANTIENE IGUAL (2.2rem) */
+.recetas-texto h3 {
+    font-size: 2.2rem;
+    color: #82528e;
+    margin-bottom: 20px;
+}
+
+.recetas-texto p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.btn-recetas {
+    display: inline-block;
+    background: #82528e;
+    color: white;
+    padding: 18px 40px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 65;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 2px solid #82528e;
+}
+
+.btn-recetas:hover {
+    background: transparent;
+    color: #82528e;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(130, 82, 142, 0.3);
+}
+
+/* Footer (se mantiene igual) */
+footer {
+    background: #c8a4d1;
+    padding: 50px 20px;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-columna {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.footer-columna h3 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.footer-columna p {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.redes-sociales {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.redes-sociales a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 1rem;
+}
+
+.redes-sociales a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .intro h2 {
+        font-size: 2.5rem;
+    }
+    
+    .por-que-elegirnos h3 {
+        font-size: 2rem; /* Mismo ajuste responsive */
+    }
+    
+    .razones {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .razon {
+        min-width: 100%;
+        max-width: 400px;
+    }
+    
+    .recetas-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+    
+    .recetas-texto h3 {
+        font-size: 2rem; /* Mismo ajuste responsive */
+    }
+}
+
+@media (max-width: 480px) {
+    .intro h2 {
+        font-size: 2rem;
+    }
+    
+    .por-que-elegirnos h3 {
+        font-size: 1.8rem; /* Mismo ajuste responsive */
+    }
+    
+    .recetas-texto h3 {
+        font-size: 1.8rem; /* Mismo ajuste responsive */
+    }
+    
+    .razon {
+        padding: 30px 20px;
+    }
+    
+    .btn-recetas {
+        padding: 15px 30px;
+        font-size: 1.1rem;
+    }
+}
