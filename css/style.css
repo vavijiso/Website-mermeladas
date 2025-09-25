@@ -21,7 +21,6 @@ body {
     margin: 0 auto;
 }
 
-/* Cabecera (se mantiene igual) */
 .cabecera {
     background: #ebc4fa url(../images/cabecera.jpg) no-repeat center top;
     background-size: cover;
@@ -39,7 +38,6 @@ body {
     padding: 40px 20px;
 }
 
-/* NAVBAR (se mantiene igual) */
 .navbar {
     background: rgba(255, 255, 255, 0.95);
     padding: 20px 0;
@@ -78,7 +76,6 @@ body {
     font-weight: bold;
 }
 
-/* Contenido principal */
 .contenido-principal {
     padding: 60px 20px;
     background: #ffffff;
@@ -91,9 +88,8 @@ body {
     text-align: center;
 }
 
-/* SOLO CAMBIO AQUÍ: Título principal más grande */
 .intro h2 {
-    font-size: 3rem; /* Aumenté de 2.5rem a 3rem */
+    font-size: 3rem;
     margin-bottom: 25px;
     color: #82528e;
 }
@@ -125,15 +121,13 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-/* NUEVA SECCIÓN: POR QUÉ ELEGIRNOS */
 .por-que-elegirnos {
     text-align: center;
     margin-bottom: 60px;
 }
 
-/* SOLO CAMBIO AQUÍ: Tamaño igual al de recetas */
 .por-que-elegirnos h3 {
-    font-size: 2.2rem; /* Mismo tamaño que recetas-texto h3 */
+    font-size: 2.2rem;
     color: #82528e;
     margin-bottom: 15px;
 }
@@ -200,7 +194,6 @@ body {
     font-size: 1rem;
 }
 
-/* NUEVA SECCIÓN: RECETAS CON CUADERNO */
 .recetas-cuaderno {
     background: linear-gradient(135deg, #f8f8f8 0%, #eae8e8 100%);
     padding: 80px 20px;
@@ -241,7 +234,6 @@ body {
     max-width: 500px;
 }
 
-/* ESTE SE MANTIENE IGUAL (2.2rem) */
 .recetas-texto h3 {
     font-size: 2.2rem;
     color: #82528e;
@@ -275,7 +267,6 @@ body {
     box-shadow: 0 8px 16px rgba(130, 82, 142, 0.3);
 }
 
-/* Footer (se mantiene igual) */
 footer {
     background: #c8a4d1;
     padding: 50px 20px;
@@ -334,7 +325,7 @@ footer {
     }
     
     .por-que-elegirnos h3 {
-        font-size: 2rem; /* Mismo ajuste responsive */
+        font-size: 2rem;
     }
     
     .razones {
@@ -354,7 +345,7 @@ footer {
     }
     
     .recetas-texto h3 {
-        font-size: 2rem; /* Mismo ajuste responsive */
+        font-size: 2rem;
     }
 }
 
@@ -364,11 +355,11 @@ footer {
     }
     
     .por-que-elegirnos h3 {
-        font-size: 1.8rem; /* Mismo ajuste responsive */
+        font-size: 1.8rem; 
     }
     
     .recetas-texto h3 {
-        font-size: 1.8rem; /* Mismo ajuste responsive */
+        font-size: 1.8rem;
     }
     
     .razon {
@@ -379,4 +370,5 @@ footer {
         padding: 15px 30px;
         font-size: 1.1rem;
     }
+
 }
