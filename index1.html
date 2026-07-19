@@ -1,36 +1,48 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Miss Juanita Jam - Mermeladas Gourmet</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link href="css/style.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miss Juanita Jam - Mermeladas Gourmet Artesanales</title>
+    <meta name="description" content="Mermeladas artesanales 100% orgánicas con la auténtica tradición austríaca. Sabores naturales, envasadas al vacío y endulzadas con miel de abejas.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <div id="page">
-        <header class="cabecera">
+        <header class="cabecera" id="inicio">
             <nav class="navbar">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Historia</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Recetas</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
+                <div class="nav-container">
+                    <a href="#inicio" class="logo">Miss Juanita</a>
+                    <button class="nav-toggle" aria-label="Abrir menú">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <ul class="nav-menu">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#historia">Historia</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#recetas">Recetas</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
             </nav>
             <div class="cabecera-content">
-                <h1>
-                    <img src="images/miss-juanita-jam.png">
-                </h1>
+                <div class="hero-text">
+                    <h1>Miss Juanita Jam</h1>
+                    <p>La auténtica tradición austríaca en cada frasco. 100% orgánicas, artesanales y llenas de sabor.</p>
+                    <div class="hero-ctas">
+                        <a href="#productos" class="btn-primario">Comprar Ahora</a>
+                        <a href="#historia" class="btn-secundario">Nuestra Historia</a>
+                    </div>
+                </div>
             </div>
         </header>
         
-        <section class="contenido-principal">
+        <section class="contenido-principal fade-in" id="historia">
             <article class="intro">
-                <h2>Miss Juanita</h2>
-                <p>Más de diez variedades de mermeladas llenas de secretos y tradición austriacas, son 100% orgánicas, elaboradas con frutas troceadas además de endulzadas con miel abejas, embazadas al vacío para más duración. Actualmente miss juanita, se radicó en chile donde quiere empezar a vender gradualmente sus productos de mermeladas, llegando hasta al extranjero, posicionándose como producto gourmet.</p>
-                <a href="#" class="btn-saber-mas">Conocer nuestra historia</a>
+                <h2>La Esencia de Miss Juanita</h2>
+                <p>Más de diez variedades de mermeladas llenas de secretos y tradición austríaca. Son 100% orgánicas, elaboradas con frutas troceadas y endulzadas con miel de abejas, envasadas al vacío para mayor duración. Actualmente, Miss Juanita se radicó en Chile, donde quiere empezar a vender gradualmente sus productos gourmet, con la meta de llegar al extranjero y posicionar su legado de sabor.</p>
+                <a href="#productos" class="btn-saber-mas">Ver Nuestras Mermeladas</a>
             </article>
 
             <div class="por-que-elegirnos">
@@ -43,15 +55,15 @@
                             <i class="fas fa-leaf"></i>
                         </div>
                         <h3>100% Orgánico y Natural</h3>
-                        <p>Nuestras frutas son cultivadas sin pesticidas ni preservantes, provenientes directamente de los árboles del campo donde creció la abuela Juanita en Austria. Cada fruto conserva su sabor auténtico y natural.</p>
+                        <p>Nuestras frutas son cultivadas sin pesticidas ni preservantes, provenientes directamente de los campos donde creció la abuela Juanita en Austria. Cada fruto conserva su sabor auténtico.</p>
                     </article>
                     
                     <article class="razon">
                         <div class="icono">
-                            <i class="fas fa-family"></i>
+                            <i class="fas fa-users"></i>
                         </div>
                         <h3>Tradición Familiar</h3>
-                        <p>Receta familiar de más de 85 años, guardada celosamente desde la cocina austríaca de la abuela Juanita. Un legado de sabores que ha pasado por generaciones manteniendo su esencia original</p>
+                        <p>Receta familiar de más de 85 años, guardada celosamente desde la cocina austríaca de la abuela Juanita. Un legado de sabores que ha pasado por generaciones.</p>
                     </article>
                     
                     <article class="razon">
@@ -59,47 +71,90 @@
                             <i class="fas fa-award"></i>
                         </div>
                         <h3>Calidad Gourmet Premium</h3>
-                        <p>Elaboración artesanal con procesos controlados que garantizan la máxima calidad. Cada frasco es embazado al vacío para preservar el sabor y aroma característicos de nuestras</p>
+                        <p>Elaboración artesanal con procesos controlados que garantizan la máxima calidad. Cada frasco es envasado al vacío para preservar el sabor y aroma característicos.</p>
                     </article>
                 </div>
             </div>
         </section>
+
+        <section class="productos-section fade-in" id="productos">
+            <h3>Nuestras Mermeladas Destacadas</h3>
+            <p class="subtitulo">Elige tu sabor favorito y lleva un pedazo de tradición a tu mesa</p>
+            <div class="productos-grid">
+                <article class="producto-card">
+                    <div class="producto-img">
+                        <i class="fas fa-jar"></i>
+                    </div>
+                    <h4>Mermelada de Frutilla</h4>
+                    <p>Dulce, con trozos de fruta real y el toque perfecto de miel de abejas.</p>
+                    <span class="precio">$5.990</span>
+                    <button class="btn-comprar" data-producto="Mermelada de Frutilla">Agregar al Carrito</button>
+                </article>
+                <article class="producto-card">
+                    <div class="producto-img">
+                        <i class="fas fa-jar"></i>
+                    </div>
+                    <h4>Mermelada de Damasco</h4>
+                    <p>Intensa y aromática, ideal para acompañar quesos y panes artesanales.</p>
+                    <span class="precio">$6.490</span>
+                    <button class="btn-comprar" data-producto="Mermelada de Damasco">Agregar al Carrito</button>
+                </article>
+                <article class="producto-card">
+                    <div class="producto-img">
+                        <i class="fas fa-jar"></i>
+                    </div>
+                    <h4>Frutos del Bosque</h4>
+                    <p>Una mezcla exquisita de moras, frambuesas y arándanos silvestres.</p>
+                    <span class="precio">$6.990</span>
+                    <button class="btn-comprar" data-producto="Mermelada Frutos del Bosque">Agregar al Carrito</button>
+                </article>
+            </div>
+        </section>
         
-        <section class="recetas-cuaderno">
+        <section class="recetas-cuaderno fade-in" id="recetas">
             <div class="recetas-content">
                 <div class="cuaderno-imagen">
-                    <img src="images/1.jpg" alt="Cuaderno de recetas familiar">
+                    <div class="img-placeholder"><i class="fas fa-book-open"></i></div>
                 </div>
                 <div class="recetas-texto">
                     <h3>Descubre el Cuaderno Secreto de Recetas</h3>
-                    <p>Accede a las recetas originales de la abuela Juanita, escritas a mano en su cuaderno de 1950. Aprende a crear deliciosos postres y platillos con nuestras mermeladas</p>
-                    <a href="recetas.html" class="btn-recetas">Recetas</a>
+                    <p>Accede a las recetas originales de la abuela Juanita, escritas a mano en su cuaderno de 1950. Aprende a crear deliciosos postres y platillos con nuestras mermeladas.</p>
+                    <a href="#" class="btn-recetas" id="btn-descargar-recetas">Descargar Recetario Gratis</a>
                 </div>
             </div>
         </section>
         
-        <footer id="pie">
+        <footer id="contacto">
             <div class="footer-content">
                 <div class="footer-columna">
                     <h3>Miss Juanita</h3>
-                    <p>Derechos reservados<br>2018</p>
+                    <p>Tradición y sabor en cada frasco.</p>
+                    <p>© <span id="year"></span> Todos los derechos reservados.</p>
                 </div>
                 
                 <div class="footer-columna">
+                    <h3>Síguenos</h3>
                     <div class="redes-sociales">
-                        <a href="#">Facebook</a>
-                        <a href="#">Instagram</a>
-                        <a href="#">Gmail</a>
+                        <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="mailto:contacto@missjuanita.cl"><i class="fas fa-envelope"></i> contacto@missjuanita.cl</a>
                     </div>
                 </div>
                 
                 <div class="footer-columna">
-                    <p>Avenida Pedro de Valdivia #0340</p>
-                    <p>contacto@missjuanita.cl</p>
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Avenida Pedro de Valdivia #0340, Chile</p>
+                    <p><i class="fas fa-phone"></i> +56 9 1234 5678</p>
                 </div>
             </div>
         </footer>
-    </div>
-</body>
 
+        <!-- Botón flotante de WhatsApp (CTA potente) -->
+        <a href="https://wa.me/56912345678?text=Hola,%20me%20interesan%20las%20mermeladas%20Miss%20Juanita" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
 </html>
